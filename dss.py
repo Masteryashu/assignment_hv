@@ -1,3 +1,4 @@
+yy=open('mydata1.txt','a')
 nums=[]
 def sumofnum():
     num=[]
@@ -11,5 +12,9 @@ def sumofnum():
             num.append(c)
     nums.append(num)
     return('The sum of the numbers is', sum(num))
-print(sumofnum())
-print(nums)
+bb=sumofnum()
+print(bb)
+print(bb,file=yy)
+print('The numbers are: ',nums)
+print('The numbers are: ',nums,file=yy)
+yy.close()
